@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+    input{
+        display: none;
+    }
+    @font-face {
+        font-family: 'Bahnschrift';
+        src: url(fonts/BAHNSCHRIFT.TTF);
+    }
+    body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #000000;
+    }
+    nav{
+        background: #000000;
+        height: 80px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    a:hover {
+        background-color: #0044E5;
+        transition: .5s;
+    }
+    .Logo1{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+    nav ul{
+        float: right;
+        margin-right:  20px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    nav ul li a{
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    }
+    .logo img {
+        position: absolute; 
+        position: sticky;
+        margin-top: 5px;
+        margin-left: 10px;
+        height: 75px;
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+
+    
+  /*flexboxcontainer forside*/
+  .flexbox-container {
+      height: 700px;
+display: flex;
+justify-content: stretch;
+  }
+  .flexbox-item {
+width: 200px;
+margin: 10px;
+background-color: #dfdfdf;
+  }
+  .flexbox-item-1 img {
+      width: 100%;
+      height: 100%;
+  }
+  .flexbox-item-1 {
+      width: 1700px;
+      height: 690px;
+      background-color: #000000;
+  }
+  @font-face {
+      font-family: "MemphisRiver";
+      src:url(fonts/Memphis\ River.otf);
+  }
+  .aarhus {
+      font-family: "MemphisRiver";
+      color: white;
+      position: absolute;
+      top: 32%;
+      left: 46%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      -webkit-text-stroke: 0.1px #000000;
+  }
+#forsidebillede {
+    opacity: 0.5;
+}
+.flexbox-item-1 .button1 {
+    position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: maroon;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font: bold;
+  
+}
+.flexbox-item-1 .button1:hover {
+    background-color: #0044E5;
+    transition: .5s;
+}
+
+.flexbox-item-1 .button2 {
+    position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: maroon;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font: bold;
+  display: block;
+
+}
+.flexbox-item-1 .button2:hover {
+    background-color: #0044E5;
+        transition: .5s;
+}
+.flexbox-item-3 {
+    background-color: black;
+    height: 690px;
+    width: 250px;
+    text-align: center;
+    font-size: large;
+    font: bold;
+color: white;
+display: block;
+}
+
+.flexbox-item-3 iframe {
+    width: 100%;
+    height: 35%;
+}
+/*flexboxcontainer menuside*/
+
+
+.containermenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    display: block;
+}
+.containermenu .heading {
+width: 50%;
+padding-bottom: 50px;
+}
+.containermenu .heading h3{
+    padding-bottom: 6px;
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+}
+
+.gallary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.1em;
+    row-gap: 1.7em;
+    margin-bottom: 2em;
+}
+.item {
+    height: 20em;
+    width: 25em;
+    background: #000;
+    opacity: 0.8;
+margin-left: 25px;
+}
+
+.item>img {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+    
+}
+.item>img:hover {
+    opacity: 0.7;
+    
+}
+.image {
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+/* Smaghjemmeside */
+.containermenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.containermenu .heading {
+width: 50%;
+padding-bottom: 50px;
+}
+.containermenu .heading h3{
+    padding-bottom: 6px;
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+}
+
+.smagcontainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.smag {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.smag img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit:initial
+
+}
+.smag::before {
+    content: "SMAG GALLARY";
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px; 
+    opacity: 0;
+    transition: .3;
+    transition-delay: .2s;
+transition: .3s;
+}
+.smag:hover::after {
+    height: 100%;
+}
+.smag:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+.smag::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgb(0, 0, 0,.4);
+}
+.smag:hover::after {
+    height: 100%;
+}
+.smag:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+.smag::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgb(0, 0, 0,.4);
+}
+    /* Footer */
+    footer{
+        background-color: #000000;
+        color:#ecebe9;
+        padding-top:50px;
+        padding-bottom: 50px;
+    }
+    footer h4{
+        color:#ecebe9;
+        margin-bottom: 20px;
+    }
+    
+    #footer {
+        display: flex;
+        justify-content:space-evenly;
+        align-items:flex-start;
+        align-content: flex-start;
+        flex-direction: row;
+        gap: 100px;
+        text-align: left;
+    }
+    
+    ul.no-bullets {
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margins */
+        line-height: 30px;
+      }
+     
+    

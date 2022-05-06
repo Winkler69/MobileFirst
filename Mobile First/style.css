@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    display: none;
+}
+nav{
+    background: #000000;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+a:hover {
+    background-color: #0044E5;
+    transition: .5s;
+}
+.Logo1{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right:  20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.logo img {
+    position: absolute; 
+    position: sticky;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 75px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;  
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0044E5;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #000000;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+}
+/*header smag side*/ 
+.containermenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.containermenu .heading {
+width: 50%;
+padding-bottom: 50px;
+}
+.containermenu .heading h3{
+    padding-bottom: 6px;
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+}
+
+.smagcontainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.smag {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.smag img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit:initial
+
+}
+.smag::before {
+    content: "Flavour";
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px; 
+    opacity: 0;
+    transition: .3;
+    transition-delay: .2s;
+transition: .3s;
+}
+.smag:hover::after {
+    height: 100%;
+}
+.smag:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+.smag::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgb(0, 0, 0,.4);
+}
+   /* Footer */
+   footer{
+    background-color: #000000;
+    color:#ecebe9;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+footer h4{
+    color:#ecebe9;
+    margin-bottom: 20px;
+}
+
+#footer {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    gap: 100px;
+    text-align: left;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    line-height: 30px;
+  }
+  #footerlogo {
+      cursor: pointer;
+  }
+
+  .text1 {
+      padding-left: 40px;
+      padding-bottom: 15px;
+  }
+ 
+#forsideimage {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+    border-radius: 15%;
+}
